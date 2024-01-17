@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 40px;
+}
+
+.headerTitle {
+    color: white;
+    text-transform: uppercase;
+    font-size: 400%;
+    font-weight: 400;
+}
+
+.headerButton {
+    text-transform: uppercase;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 150%;
+    letter-spacing: 2px;
+}
+
+.bigFigure {
+    width: 100%;
+    height: 110vh;
+}
+
+.bigFigure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collections {
+    width: 100%;
+    padding: 40px;
+    background: blue;
+}
+
+.collectionsTitle, .infoTitle {
+    font-size: 350%;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+}
+
+.collectionsList {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.collectionsListItem {
+    width: 500px;
+    height: 700px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    max-width: 100%;
+
+}
+
+.collectionsListItem > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info {
+    background: green;
+    padding: 40px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.info p {
+    max-width: 50ch;
+}
+
+.block {
+    background-color: blue;
+    width: 400px;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+@media (max-width: 500px) {
+    .collectionsTitle {
+        font-size: 200%;
+    }
+}
